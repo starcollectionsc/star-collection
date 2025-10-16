@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Star Collection — Women & Kids Clothing | Red Hills, Chennai</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --accent: #d63384;
+      }
+
+      body {
+        font-family: system-ui, Segoe UI, Roboto, "Helvetica Neue", Arial;
+      }
+
+      .hero {
+        background: linear-gradient(
+            180deg,
+            rgb(186, 14, 234),
+            rgba(0, 0, 0, 0.15)
+          ),
+          url("https://source.unsplash.com/1200x600/?clothes,fashion")
+            center/cover no-repeat;
+        color: white;
+        padding: 80px 0;
+      }
+
+      .badge-accent {
+        background: var(--accent);
+        color: white;
+      }
+
+      /* ✅ FIXED PART: 1:1 image ratio without cropping */
+      .product-card img {
+        width: 100%;
+        aspect-ratio: 1 / 1; /* makes perfect square */
+        object-fit: contain; /* shows full image without cropping */
+        background-color: #f8f9fa; /* light background behind images */
+        border-radius: 0.5rem; /* smooth edges */
+      }
+
+      /* Optional: give cards consistent layout */
+      .product-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+
+      .product-card .card-body {
+        flex: 1;
+      }
+
+      .map-responsive {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+      }
+
+      .map-responsive iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Star Collection</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+          aria-controls="nav"
+          aria-expanded="false"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#women">Women</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#kids">Kids</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#location">Location</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero text-center text-white">
+      <div class="container">
+        <h1 class="display-5 fw-bold">Star Collection</h1>
+        <p class="lead">
+          Stylish women & playful kids clothing — located at Bharathi Nagar, Red
+          Hills Road, Chennai
+        </p>
+        <a href="#women" class="btn btn-light btn-lg">Shop Women</a>
+        <a href="#kids" class="btn btn-outline-light btn-lg ms-2">Shop Kids</a>
+      </div>
+    </header>
+
+    <main class="py-5">
+      <div class="container">
+        <!-- Women section -->
+        <section id="women" class="mb-5">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2>
+              Women's Collection
+              <span class="badge badge-accent ms-2">New</span>
+            </h2>
+            <small class="text-muted">Quality fabrics • Trendy designs</small>
+          </div>
+          <div class="row g-3">
+            <!-- product cards (replace images/text with your items) -->
+            <div class="col-12 col-md-4">
+              <div class="card product-card">
+                <img
+                  src="images/kurti_group.png"
+                  class="card-img-top"
+                  alt="Dress"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Kurti's</h5>
+                  <p class="card-text">
+                    Stylish and comfortable kurtis for everyday elegance. — S,
+                    M, L
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <strong>₹999</strong>
+                    <a class="btn btn-sm btn-primary" href="#contact"
+                      >Enquire</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+              <div class="card product-card">
+                <img src="images/salwar.png" class="card-img-top" alt="Top" />
+                <div class="card-body">
+                  <h5 class="card-title">Salwar</h5>
+                  <p class="card-text">
+                    Trendy salwar sets for work, casual, and festive occasions.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <strong>₹799</strong>
+                    <a class="btn btn-sm btn-primary" href="#contact"
+                      >Enquire</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+              <div class="card product-card">
+                <img
+                  src="images/Untitled design (1).png"
+                  class="card-img-top"
+                  alt="Jeans"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Night Dress</h5>
+                  <p class="card-text">
+                    Soft and cozy night dresses for a restful sleep and
+                    peacefull night.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <strong>₹1199</strong>
+                    <a class="btn btn-sm btn-primary" href="#contact"
+                      >Enquire</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Kids section -->
+        <section id="kids" class="mb-5">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2>Kids' Collection</h2>
+            <small class="text-muted">Cute, soft & safe</small>
+          </div>
+          <div class="row g-3">
+            <div class="col-12 col-md-4">
+              <div class="card product-card">
+                <img
+                  src="images/Untitled design.png"
+                  class="card-img-top"
+                  alt="Kids Dress"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Daily Wear for Kids</h5>
+                  <p class="card-text">
+                    Comfortable and durable clothes for everyday adventures.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <strong>₹499</strong>
+                    <a class="btn btn-sm btn-primary" href="#contact"
+                      >Enquire</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card product-card">
+                <img
+                  src="images/frock.png"
+                  class="card-img-top"
+                  alt="Kids Shirt"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Kids Frocks</h5>
+                  <p class="card-text">
+                    Cute and playful frocks for girls, perfect for fun days and
+                    playfull days.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <strong>₹349</strong>
+                    <a class="btn btn-sm btn-primary" href="#contact"
+                      >Enquire</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card product-card">
+                <img
+                  src="images/party wear.png"
+                  class="card-img-top"
+                  alt="Kids Combo"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Party Wear for Kids</h5>
+                  <p class="card-text">
+                    Bright and charming outfits for special occasions and
+                    parties.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <strong>₹699</strong>
+                    <a class="btn btn-sm btn-primary" href="#contact"
+                      >Enquire</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Location + Map -->
+        <section id="location" class="mb-5">
+          <h2>Find Us</h2>
+          <p class="text-muted">
+            Star Collection — Bharathi Nagar, Red Hills Road, Chennai
+          </p>
+          <div class="map-responsive shadow-sm rounded">
+            <!-- Map: uses Google Maps embed for the address string. Replace the query if you have an exact place link -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10175.78213371522!2d80.21698502826634!3d13.117422343278724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526456dfc62105%3A0x51a2ab9f73bb37d8!2sAnna%20Statue%2C%201%2C%20Red%20Hills%20Rd%2C%20Anjugam%20Nagar%2C%20Velavan%20Nagar%2C%20Kolathur%2C%20Chennai%2C%20Tamil%20Nadu%20600099!5e0!3m2!1sen!2sin!4v1760631837181!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="mb-5">
+          <h2>Contact</h2>
+          <p class="mb-1">
+            <strong>Address:</strong> Bharathi Nagar, Red Hills Road, Chennai
+          </p>
+          <p class="mb-3"><strong>Phone:</strong> +91 9444075594</p>
+
+          <form
+            class="row g-3"
+            onsubmit="event.preventDefault(); alert('Thanks! We received your enquiry.');"
+          >
+            <div class="col-md-6">
+              <input class="form-control" placeholder="Your name" required />
+            </div>
+            <div class="col-md-6">
+              <input
+                class="form-control"
+                placeholder="Phone or email"
+                required
+              />
+            </div>
+            <div class="col-12">
+              <textarea
+                class="form-control"
+                placeholder="Message (what are you looking for?)"
+                rows="3"
+                required
+              ></textarea>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary">Send Enquiry</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer class="py-4 bg-light text-center">
+      <div class="container small text-muted">
+        © Star Collection — Bharathi Nagar, Red Hills Road, Chennai
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
